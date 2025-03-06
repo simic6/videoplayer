@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Video Player</title>
+    <link rel="stylesheet" href="../css/style.css">  <!-- Correct path to CSS file -->
+</head>
+<body>
+<h1> Video Player Lite</h1>
+
+<p>Lite Version cannot download the edited files unlike the standalone version.</p>
+<p>(Download exe version to be able to download the files.)</p>
+
+<div id="videoContainer">
+    <input type="file" id="fileInput" accept="video/*">
+    <video id="videoPlayer" controls>
+        <source id="videoSource" src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="controls">
+        <button id="playPauseBtn">Play</button>
+        <button id="restartBtn">Restart</button>
+        <button id="skipBackBtn">-5s</button>
+        <button id="skipForwardBtn">+5s</button>
+        <button id="redFilterBtn">Red Filter</button>
+        <button id="greenFilterBtn">Green Filter</button>
+        <button id="blueFilterBtn">Blue Filter</button>
+        <button id="removeColorFilterBtn">Remove Color Filter</button>
+
+        <button id="pixelateBtn">Pixelate</button>
+        <button id="flipHBtn">Flip Horizontal</button>
+        <button id="flipVBtn">Flip Vertical</button>
+        <button id="reverseBtn">Reverse</button>
+        <button id="blackBorderBtn">Add Border</button>
+
+        <!-- Link to standalone version -->
+     
+    </div>
+
+    <!-- Download Section -->
+    <h1>Download Python File</h1>
+    <a href="files.zip" download="merged.exe">
+        <button id="downloadBtn">Download EXE</button>
+    </a>
+</div>
+
+<script src="../js/script.js"></script>  <!-- Correct path to JS file -->
+
+
+</body>
+</html>
